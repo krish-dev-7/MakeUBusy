@@ -1,5 +1,6 @@
-package com.example.makeubusy
+package com.example.makeubusy.api
 
+import com.example.makeubusy.models.Activity
 import retrofit2.Response
 import retrofit2.http.GET
 

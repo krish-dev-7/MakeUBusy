@@ -7,13 +7,15 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+
 import android.view.View
+import com.example.makeubusy.R
 import android.widget.Button
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
-import com.example.makeubusy.databinding.ActivityMainBinding
+import com.example.makeubusy.api.RetrofitInstance
 import com.google.android.material.button.MaterialButton
 import retrofit2.HttpException
 import java.io.IOException
@@ -45,6 +47,7 @@ class MainActivity : AppCompatActivity() {
         btn.setOnClickListener {
             apiCall()
         }
+
         btn2.setOnClickListener{
             count++
             t3.text = count.toString()

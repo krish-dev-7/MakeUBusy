@@ -1,4 +1,4 @@
-package com.example.makeubusy
+package com.example.makeubusy.models
 
 data class Activity(
     val accessibility: Double,
